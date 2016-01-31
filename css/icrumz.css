@@ -1,0 +1,458 @@
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: iCrumz collection container styles
+:: footer Styles
+*/
+
+.row {
+    width: 90%;
+    min-width: 960px;
+}
+
+/* -----------------------------------------
+    iCrumz collection container styles
+ ----------------------------------------- */
+
+/* cc = Collection Container */
+#cc ul {
+    list-style-type: none;
+}
+
+#cc {
+    display: table;
+    padding: 5px 4px 4px 28px !important;
+}
+
+#cc ul {
+    font-size: 14px;
+    line-height: 1.6;
+    /*padding: 0 0 0 20px;*/
+}
+
+/* one collection */
+#cc > li {
+    list-style-type: none;
+}
+
+/* collection (tab) link/name */
+#cc > li > a {
+    display: none;
+}
+
+/* selected collection left indent */
+#tsel {
+    padding: 0;
+}
+
+/* hide selected collection name */
+#tsel > li > div {
+    display: none;
+}
+
+/* column (space holder element) */
+.column {
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    float: left;
+    min-width: 25%;
+    max-width: 25%;
+    /*Set in icrumz.js to match column/window size*/
+    /*height: 290px;*/
+}
+
+/*.column, .column ul {*/
+    /*list-style-type: none;*/
+/*}*/
+
+/* top-level folder */
+.fldr {
+    width: 100%;
+    margin: 10px 0 2px 0;
+}
+
+.fldr span {
+    padding: 0 4px 0 4px;
+    border: 0px solid #fff;
+    display: inline-block;
+    color: #fff;
+    font-family: "noto sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    -moz-border-radius:3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6eb6ce), color-stop(1, #83c0d6));
+    background:-moz-linear-gradient(top, #6eb6ce 5%, #83c0d6 100%);
+    background:-webkit-linear-gradient(top, #6eb6ce 5%, #83c0d6 100%);
+    background:-o-linear-gradient(top, #6eb6ce 5%, #83c0d6 100%);
+    background:-ms-linear-gradient(top, #6eb6ce 5%, #83c0d6 100%);
+    background:linear-gradient(to bottom, #6eb6ce 5%, #83c0d6 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6eb6ce', endColorstr='#83c0d6',GradientType=0);
+
+    background-color:#70acc2;
+}
+
+.fdr,.new span {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0097c8), color-stop(1, #005c96));
+    background:-moz-linear-gradient(top, #0097c8 5%, #005c96 100%);
+    background:-webkit-linear-gradient(top, #0097c8 5%, #005c96 100%);
+    background:-o-linear-gradient(top, #0097c8 5%, #005c96 100%);
+    background:-ms-linear-gradient(top, #0097c8 5%, #005c96 100%);
+    background:linear-gradient(to bottom, #0097c8 5%, #005c96 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0097c8', endColorstr='#005c96',GradientType=0);
+
+    background-color:#00517a;
+}
+
+.fdr,.new sup {
+    color: rgb(230, 154, 53);
+}
+
+.fldr + ul {
+    padding: 0 0 0 10px;
+}
+
+/* sub-folder */
+.ui-sortable ul .fldr span {
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+/* bookmark */
+.itm {
+    line-height: .8em;
+}
+
+/* bookmark favicon */
+.itm img {
+    height: 16px;
+    width: 16px;
+    margin: 0;
+    padding: 0;
+    vertical-align: -4px;
+}
+
+/* bookmark link */
+.itm a {
+    padding-left:4px;
+    margin: 0;
+    display: inline;
+    line-height: 17px;
+    vertical-align: 3px;
+}
+
+a, a:visited {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #005477;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005477;
+}
+
+/* drop zone indicator */
+.placeholder {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 100%;
+    /*background: #bbeebb;*/
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FFB039), color-stop(1, #FF9900));
+    background:-moz-linear-gradient(top, #FFB039 5%, #FF9900 100%);
+    background:-webkit-linear-gradient(top, #FFB039 5%, #FF9900 100%);
+    background:-o-linear-gradient(top, #FFB039 5%, #FF9900 100%);
+    background:-ms-linear-gradient(top, #FFB039 5%, #FF9900 100%);
+    background:linear-gradient(to bottom, #FFB039 5%, #FF9900 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFB039', endColorstr='#FF9900',GradientType=0);
+
+    background-color:#FFB039;
+    opacity: .5;
+    filter:Alpha(opacity=50);
+
+    border-color: transparent;
+}
+
+.header-button {
+    position: absolute;
+    z-index: 800;
+    padding: 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+#trash {
+    background-size: 39px 37px;
+    background-position: 4px 11px;
+    height: 63px;
+    width: 70px;
+    top: 0px;
+    left: 815px;
+}
+
+.trash-default {
+    background-image: url("../img/trash-icon.png");
+}
+
+.trash-hover {
+    background-image: url("../img/trash-icon-with-glow.png");
+}
+
+#settings {
+    background-size: 48px 37px;
+    background-position: 8px 10px;
+    height: 75px;
+    width: 70px;
+    top: 0px;
+    left: 895px;
+}
+
+.settings-default {
+    background-image: url("../img/settings-icon.png");
+}
+
+.settings-hover {
+    background-image: url("../img/settings-icon-with-glow.png");
+}
+
+.settings-menu-default {
+    left: 700px;
+    top: 70px;
+    display:none;
+}
+
+.settings-menu-hover {
+    display: inline;
+}
+
+
+/* ---------------------------
+   Bootstrap dropdown rules
+----------------------------*/
+
+.dropdown-menu {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    float: left;
+    font-size: 14px;
+    list-style: none outside none;
+    margin: 2px 0 0;
+    min-width: 250px;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+/* THE TRIANGLE
+--------------- */
+
+/* creates triangle */
+.triangle-isosceles:after {
+    content: "";
+    position: absolute;
+    bottom: -15px; /* value = - border-top-width - border-bottom-width */
+    left: 50px; /* controls horizontal position */
+    border-width: 15px 15px 0; /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    border-color:#a0a0a0 transparent;
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+
+/* Variant : top
+------------------------------------------ */
+
+.triangle-isosceles.top:after {
+    top: -15px; /* value = - border-top-width - border-bottom-width */
+    right: 50px; /* controls horizontal position */
+    bottom: auto;
+    left: auto;
+    border-width: 0 15px 15px; /* vary these values to change the angle of the vertex */
+    border-color:#a0a0a0 transparent;
+}
+
+/* ------------------------------
+    TopNav styles
+---------------------------------*/
+#topNav 	{
+  padding: 0;
+  margin:0px;
+  top: 0;
+  width: 100%;
+  position: absolute;
+	list-style-type:none;
+	/*height:30px;*/
+  background: #1a6dba;
+}
+
+/*.topNav > li > ul {*/
+    /*background: red:*/
+/*}*/
+
+.topNav > li > ul > li {
+    background: white;
+    width: 100%;
+    /*border-top: 1px solid #969696;*/
+    border-right: 1px solid #969696;
+    border-bottom: 1px solid #969696;
+    border-left: 1px solid #969696;
+
+    /*border-radius: 6px;*/
+    /*margin-top: 5px;*/
+}
+
+.topNav > li > ul > li:first-child {
+    /*background: red;*/
+    width: 100%;
+    /*border-top: 1px solid #969696;*/
+    border-right: 1px solid #969696;
+    border-bottom: 1px solid #969696;
+    border-left: 1px solid #969696;
+    margin-top: 5px;
+}
+
+#topNav li 	{
+	float:left;
+    padding: 2px 0 0 0;
+	/*height:30px;*/
+}
+
+/*Search related*/
+
+/*#topNav form {*/
+    /*display: inline;*/
+/*}*/
+
+/*#topNav input {*/
+    /*border: 1px solid #CCCCCC;*/
+    /*font-size: .8em;*/
+    /*display: inline;*/
+    /*height: 18px;*/
+    /*padding: 0 0 0 4px;*/
+    /*margin: 0px 1px 0px 20px;*/
+    /*border-radius: 6px;*/
+/*}*/
+
+
+/* -----------------------------------------
+    CROSS BROWSER DROPDOWN MENU
+----------------------------------------- */
+ul.topNav {
+    margin: 0 2px 0 20px;
+    position: absolute;
+    z-index: 597;
+    float: left;
+    height: 26px;
+    top: 25px;
+    left: 880px;
+}
+
+ul.topNav ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 800px;
+    z-index: 598;
+    width: 150px;
+    background: #1a6dba;
+    margin-top: 0px;
+    border: 0px solid #fff;
+}
+
+ul.topNav, ul.topNav li, ul.topNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*border: 0px solid #fff;*/
+    /*background: #1a6dba;*/
+    /*color: #FFB335;*/
+}
+
+ul.topNav a, ul.topNav span {
+    color: #FFB335;
+    padding: 0 4px 0 20px;
+    font-weight: bold;
+    text-decoration: none;
+     /*display: inline;*/
+    /*font-family: "Trebuchet MS", "Helvetica", "Arial", sans-serif;*/
+    font-size: .9em;
+    /*text-align: center;*/
+}
+
+.selected {
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+
+ul.topNav li {
+    float: left;
+    line-height: 1.2em;
+    vertical-align: middle;
+    zoom: 1;
+    padding: 0px 0px 0px 0px;
+}
+
+ul.topNav li.hover, ul.topNav li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+    background: #f4f4f4;
+}
+
+
+ul.topNav ul li {
+    float: none;
+}
+
+ul.topNav ul ul {
+    /*top: -2px;*/
+    left: 100%;
+}
+
+ul.topNav li:hover > ul {
+    visibility: visible
+}
+
+
+/* -----------------------------------------
+  Testing Styles
+----------------------------------------- */
+
+/*.drop-error {*/
+    /*display: none;*/
+    /*background: #fbe3e4;*/
+    /*border-color: transparent;*/
+/*}*/
+
+/*.ui-sortable-helper {*/
+    /*background: red;*/
+/*}*/
+
+/*.drop-error {*/
+    /*display: inherit;*/
+    /*background: green;*/
+/*}*/
+
+
+/* -----------------------------------------
+  footer Styles
+----------------------------------------- */
+/*#footer {*/
+    /*margin: 0 0 0 0;*/
+    /*padding: 0 0 10px  20px;*/
+/*}*/

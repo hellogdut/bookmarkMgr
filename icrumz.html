@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!-->
+
+
+<html class="no-js"><!--<![endif]--> 
+<head>
+    <meta charset="utf-8" />
+    <title>iCrumz - Start Here</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="https://icrumz.com/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css" /><!--<link rel="stylesheet" href="css/bootstrap.css" th:href="@{'__${hostURL}__css/bootstrap.css'}"/>-->
+    
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/icrumz.css" /><!-- Enable gradient in IE 9 --><!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]--><!-- IE Fix for HTML5 Tags --><!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+    
+
+    
+    
+</head>
+<body>
+<!--  -->
+<script>
+    // Hide page content until Javascript execution completes, prevents flash of
+    // hidden bookmarks under collapsed folders. Page is made visible in icrumz.js
+    // document.body.style.display = "none";
+</script>
+
+<div id="title_gradient" class="gradient">
+    &nbsp;
+</div>
+
+<div id="logo">
+    <a href="icrumz.html"><img src="img/logo-masthead.png" /></a>
+    <form id="gglFrm" method="get" action="https://www.google.com/search" target="_blank">
+        <input id="search" type="text" placeholder="Search" name="q" size="100" maxlength="255" value="" /><!--<input id="gglsub" type="submit" value="Google"/>-->
+        
+        <a id="gglsub" href="#">&nbsp;</a>
+    </form>
+    <div id="trash" class="header-button trash-default" title="Trash"></div>
+    <div id="settings" class="header-button settings-default" title="Settings"></div>
+    <ul id="settings-menu" class="dropdown-menu settings-menu-default">
+        <li><a tabindex="-1" href="https://icrumz.com/login/change-password.html">Change
+                Password</a></li>
+        <li><a id="logout" tabindex="-1" href="https://icrumz.com/logout">Log Out - xxx/a></li>
+    </ul>
+</div><!--
+#cc = collections container
+#cc > li = single collection container
+#cc > li > ul = single collection
+#cc > li > ul > li > div > a:[href] = collectionID - text = collection name,
+.fldr <span>text</span> = folder name, + ul = folder contents
+.itm > a:[first][href] = bookmarkID, img = bookmark favicon
+.itm > a:[second][href] = bookmark link, text = bookmark description
+-->
+
+
+<ul id="cc" class="row">
+    <li>
+        <ul id="tsel" data-ver="211">
+            <li>
+                <div>
+                    <a href="https://icrumz.com/icrumz.html?t=4569">Main</a>
+                </div>
+                <ul class="column"></ul>
+                <ul class="column"></ul>
+                <ul class="column"></ul>
+                <ul class="column"></ul>
+
+                
+
+                
+
+                
+            </li>
+        </ul><!--Example collection 2 selectable on UI tab-->
+        
+        
+    </li>
+</ul>
+
+<!-- <div id="footer" class="row">
+    <ul>
+        <li><a href="https://icrumz.com/about.html">About</a></li>
+        <li><a href="https://icrumz.com/q-and-a.html">Q<span>&amp;</span>A</a></li>
+        <li><a href="https://icrumz.com/help.html">Help</a></li>
+        <li><a href="https://icrumz.com/terms.html">Terms</a></li>
+        <li><a href="https://icrumz.com/privacy.html">Privacy</a></li>
+        <li><a href="javascript:(function(){var u=&#39;https://icrumz.com/icrumz/add&#39;,d=document,w=window,a=d.getElementsByTagName(&#39;LINK&#39;),l=w.location,h=l.href.match(/^https?:\/\/.*?\//),e=encodeURIComponent,m=d.getElementsByTagName(&#39;META&#39;),n=&#39;&#39;,k=&#39;&#39;,t,i,s=&#39;&#39;+(w.getSelection?w.getSelection():d.getSelection?d.getSelection():d.selection?d.selection.createRange().text:&#39;&#39;);if(m)for(i=0;i&lt;m.length;i++){if(m[i].name){t=m[i].name.toLowerCase();if(t==&#39;description&#39;)n=m[i].content;if(t==&#39;keywords&#39;)k=m[i].content}}if(s)n=s;if(h)h=h[0]+&#39;favicon.ico&#39;;else h=&#39;&#39;;for(i=0;i&lt;a.length;i++){if(a[i].rel&amp;&amp;a[i].rel.match(/^(shortcut icon|icon)/i)&amp;&amp;a[i].href&amp;&amp;a[i].href.match(/^https?:\/\//)){h=a[i].href}}l.href=(u+&#39;?v=1&#39;+&#39;&amp;h=&#39;+e(l.href)+&#39;&amp;i=&#39;+e(h)+&#39;&amp;t=&#39;+e(d.title.substr(0,200))+&#39;&amp;k=&#39;+e(k.substr(0,200))+&#39;&amp;d=&#39;+e(n)).substring(0,navigator.userAgent.match(/MSIE/)?2080:4000)})()" onclick="alert(&#39;Bookmark this link or drag it to your bookmarks bar. Use it to add new links to your bookmark page.&#39;);return false;">+iCrumz</a></li>
+        <li><a href="javascript:(function(){var u=&#39;https://icrumz.com/icrumz/share&#39;,d=document,w=window,l=w.location,h=l.href.match(/^https?:\/\/.*?\//),e=encodeURIComponent,m=d.getElementsByTagName(&#39;META&#39;),n=&#39;&#39;,i,s=&#39;&#39;+(w.getSelection?w.getSelection():d.getSelection?d.getSelection():d.selection?d.selection.createRange().text:&#39;&#39;);if(m)for(i=0;i&lt;m.length;i++)&#39;description&#39;==m[i].name.toLowerCase()&amp;&amp;(n=m[i].content);s&amp;&amp;(n=s),l.href=(u+&#39;?v=1&#39;+&#39;&amp;h=&#39;+e(l.href)+&#39;&amp;t=&#39;+e(d.title.substr(0,200))+&#39;&amp;d=&#39;+e(n)).substring(0,navigator.userAgent.match(/MSIE/)?2080:4e3);})()" onclick="alert(&#39;Bookmark this link or drag it to your bookmarks bar. Use it to quickly share web pages.&#39;);return false;">iCrumz.Share</a></li><!-- li><a href="icrumz.html?reset">Reset</a></li -->
+        
+    </ul>
+</div>
+
+
+
+<input id="key" name="key" type="hidden" value="68e913c6-d1fa-42a7-9cc8-26a6ccafe774" />
+
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.core-1.8.24.js"></script>
+<script type="text/javascript" src="js/jquery.ui.widget-1.8.24.js"></script>
+<script type="text/javascript" src="js/jquery.ui.mouse-1.8.24.js"></script>
+<script type="text/javascript" src="js/jquery.ui.droppable-1.8.24.js"></script>
+<script type="text/javascript" src="js/jquery.ui.sortable-1.8.24.js"></script>
+
+<script type="text/javascript" src="js/iczserialize.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/Bookmark.js"></script>
+<script type="text/javascript" src="js/icrumz.js"></script><!-- Universal Analytics (GA) -->
+
+</body>
+</html>
